@@ -1,25 +1,19 @@
-
 <template>
-    <div>
-     <HeaderComponent />
-     <MainComponent />
-    </div>
+  <div>
+    <Header />
+    <router-view />
+    <Footer />
+  </div>
 </template>
 
 <script>
+import Header from '@/components/partials/Header.vue';
+import Footer from '@/components/partials/Footer.vue';
 
-import HeaderComponent from './components/HeaderComponent.vue';
-import MainComponent from './components/MainComponent.vue';
-    export default {
-        name: 'App',
-        components: {
-            HeaderComponent,
-            MainComponent
-        }
-        
-    }
+export default {
+  components: {
+    Header,
+    Footer
+  }
+};
 </script>
-
-<style lang="scss" scoped>
-
-</style>
