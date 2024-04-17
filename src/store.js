@@ -1,18 +1,16 @@
-import {reactive} from "vue";
+import { reactive } from "vue";
 
 export const store = reactive({
-    apiURL: 'https://api.themoviedb.org/3',
+    apiURL: 'https://developers.themoviedb.org/3',
     endPoint: {
-        movie: 'search/movie'
+        movie: 'search/movie',
         serieTv: 'search/tv'
     },
-    options: (
-        params = {
-            apiKey: "c7cb25375a737494a1c2693a1b31e9cb",
-            query: 'a',
-        }
-    )
-
+    options: { // Ora options è un oggetto
+        apiKey: "c7cb25375a737494a1c2693a1b31e9cb",
+        query: 'a',
+    }
 });
+
 
     
