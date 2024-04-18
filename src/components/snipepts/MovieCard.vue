@@ -5,8 +5,9 @@
         <h5 class="card-title">{{ movie.title }}</h5>
         <p class="card-text">Lingua: {{ movie.original_language }}</p>
         <p class="card-text">Vote Average: {{ movie.vote_average }}</p>
-        <router-link :to="{ name: 'MovieDetails', params: { id: movie.id } }" class="btn btn-primary">View Details</router-link>
       </div>
+        <router-link :to="{ name: 'MovieDetails', params: { id: movie.id } }" class="btn btn-primary">View Details</router-link>
+      
     </div>
   </template>
   
@@ -26,3 +27,14 @@
   }
   </script>
   
+  
+<style lang="scss" scoped>
+
+.card {
+  background-color: gray;
+}
+.card-body {
+  height: 200px;
+}
+
+</style>

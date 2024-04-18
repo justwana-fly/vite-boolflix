@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Random Movies</h2>
+    <h3 class="p-3 text-white">Titoli del momento</h3>
     <div class="row">
       <div class="col-md-2 col-sm-6" v-for="movie in movies" :key="movie.id">
         <MovieCard :movie="movie" />
@@ -40,3 +40,15 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+
+section{
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+  
+
+
+</style>
