@@ -1,10 +1,11 @@
 <template>
-    <div>
+    <div class="container">
       <h1>{{ movie.title }}</h1>
       <div>
         <img :src="getImageUrl(movie.poster_path)" :alt="movie.title">
         <p>Original Title: {{ movie.original_title }}</p>
-        <p>Language: {{ movie.original_language }}</p>
+        <p>Lingua: {{ movie.original_language }}</p>
+        <p>Budget: {{ movie.budget }}</p>
         <p>Vote Average: {{ movie.vote_average }}</p>
         <!-- Add more details if needed -->
       </div>
