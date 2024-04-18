@@ -43,7 +43,7 @@ const getRandomMovies = async () => {
                 sort_by: "popularity.desc",
                 include_adult: false,
                 limit: 12,
-                with_original_language: "it",
+                // with_original_language: "it",
             },
         });
         return response.data.results;
